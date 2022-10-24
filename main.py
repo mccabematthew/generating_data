@@ -7,7 +7,7 @@ y_values = [x**2 for x in x_values]
 # fig represents  'figure' (entire collection of plots), ax reps singular plots
 plt.style.use('seaborn')
 fig, ax = plt.subplots()
-ax.scatter(x_values, y_values, s=10)
+ax.scatter(x_values, y_values, c=y_values, cmap=plt.cm.Blues, s=10)
 
 # set chart title and label axes
 ax.set_title("Squared Numbers", fontsize=24)
